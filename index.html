@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBos Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        header {
+            margin-top: 50px;
+        }
+
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 700;
+        }
+
+        .name {
+            color: #D46A6A;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .role {
+            color: #D46A6A;
+        }
+
+        .about {
+            margin: 30px 20px;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 50px;
+        }
+
+        .social-links a {
+            margin: 0 10px;
+            color: #D46A6A;
+            font-size: 24px;
+        }
+
+        .hire-me {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #D46A6A;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .hire-me:hover {
+            background-color: #BF4949;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile">
+            <img src="ico.jepg" alt="Byte">
+        </div>
+        <h1>Hi, It's <span class="name">Byte</span></h1>
+        <h2>I'm a <span class="role">Pentester</span></h2>
+    </header>
+
+    <section class="about">
+        <p>I'am a dedicated website pentester and bug hunter. I specialize in identifying vulnerabilities and ensuring the security of web applications. Passionate about ethical hacking and contributing to a safer online environment. Let's connect and collaborate!</p>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <button class="hire-me">Hire me</button>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script>
+        // Misalnya untuk mengubah role secara otomatis dari Pentester menjadi Developer dan sebaliknya
+        const roleElement = document.querySelector('.role');
+        const roles = ['Pentester', 'Developer'];
+        let index = 0;
+
+        setInterval(() => {
+            index = (index + 1) % roles.length;
+            roleElement.textContent = roles[index];
+        }, 3000);
+    </script>
+</body>
+</html>
